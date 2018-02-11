@@ -1,9 +1,9 @@
 //=============================================================================
-// ModBattleWindows.js
+// CustomEmergeText.js
 //=============================================================================
  
 /*:
- * @plugindesc Modifies the battle scene for our conversation battles.
+ * @plugindesc Modifies the emerge messages for specific enemies.
  * @author Hugh Bagan
  *
  * @help There are no plugin commands.
