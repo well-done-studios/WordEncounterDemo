@@ -12,14 +12,14 @@
 
 (function() {
 
-    Scene_MenuBase.prototype.createBackground = function() {
-        this._backgroundSprite = new Sprite();
-        this._backgroundSprite.bitmap = ImageManager.loadPicture("Phone2");
-        this.addChild(this._backgroundSprite);
-    };
+    
 
     Scene_Menu.prototype.create = function() {
         Scene_MenuBase.prototype.create.call(this);
+
+        
+        this.createForeground();
+
         this.createCommandWindow();
         this.createGoldWindow();
         this.createStatusWindow();
@@ -33,7 +33,19 @@
         this._statusWindow.hide();
         this._commandWindow.x = 280;
         this._commandWindow.y = 190;
-        this._commandWindow.opacity = 0;
+        this._commandWindow.opacity = 100;
+    };
+
+    /*Scene_MenuBase.prototype.createBackground = function() {
+        this._backgroundSprite = new Sprite();
+        this._backgroundSprite.bitmap = ImageManager.loadPicture("Phone2");
+        this.addChild(this._backgroundSprite);
+    };*/
+    
+    Scene_Menu.prototype.createForeground = function() {
+        this._foregroundSprite = new Sprite();
+        this._foregroundSprite.bitmap = ImageManager.loadPicture("Phone3");
+        this.addChild(this._foregroundSprite);
     };
 
     /*
