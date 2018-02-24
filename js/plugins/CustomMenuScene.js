@@ -33,7 +33,7 @@
         this._statusWindow.hide();
         this._commandWindow.x = 280;
         this._commandWindow.y = 190;
-        this._commandWindow.opacity = 100;
+        this._commandWindow.opacity = 255;
     };
 
     /*Scene_MenuBase.prototype.createBackground = function() {
