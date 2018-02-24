@@ -10,6 +10,12 @@
  * 
  */
 
+Scene_Battle.prototype.create = function() {
+    Scene_Base.prototype.create.call(this);
+    this.createDisplayObjects();
+
+    var rich = PIXI.Sprite.fromImage('')
+};
 
 // create a new Sprite from an image path
 var bunny = PIXI.Sprite.fromImage('required/assets/basics/bunny.png')
