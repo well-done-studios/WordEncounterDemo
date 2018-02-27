@@ -31,8 +31,10 @@
         */
         this._goldWindow.hide();
         this._statusWindow.hide();
-        this._commandWindow.x = 280;
-        this._commandWindow.y = 190;
+        this._commandWindow.x = 295;
+        this._commandWindow.y = 90;
+        this._commandWindow.width = 250;
+        this._commandWindow.height = 450;
         this._commandWindow.opacity = 255;
     };
 
@@ -44,7 +46,7 @@
     
     Scene_Menu.prototype.createForeground = function() {
         this._foregroundSprite = new Sprite();
-        this._foregroundSprite.bitmap = ImageManager.loadPicture("Phone3");
+        this._foregroundSprite.bitmap = ImageManager.loadPicture("iphone");
         this.addChild(this._foregroundSprite);
     };
 
