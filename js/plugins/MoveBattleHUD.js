@@ -6,8 +6,10 @@
  * @plugindesc Adjust the location of the Battle windows.
  * @author Hugh Bagan
  *
- * @help There are no plugin commands.
+ * @help Place this plugin at the bottom of the Plugin list.
+ * It may override any other plugins that change the Battle system.
  * 
+ * This plugin will move all of the windows of the Battle Scene to below the visible screen.
  */
 
 
