@@ -13,6 +13,7 @@
 /*  Taken straight from the source and redefined here.
  *
  */
+
 BattleManager.displayStartMessages = function() {
 
     $gameTroop.enemyNames().forEach(function(name) {
