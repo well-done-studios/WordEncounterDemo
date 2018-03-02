@@ -12,12 +12,9 @@
 
 (function() {
 
-    
-
     Scene_Menu.prototype.create = function() {
         Scene_MenuBase.prototype.create.call(this);
 
-        
         this.createForeground();
 
         this.createCommandWindow();
@@ -36,6 +33,20 @@
         this._commandWindow.width = 250;
         this._commandWindow.height = 450;
         this._commandWindow.opacity = 255;
+    };
+
+    Scene_Menu.prototype.createCommandWindow = function() {
+        this._commandWindow = new Window_MenuCommand(0, 0);
+        this._commandWindow.setHandler('item',      this.commandItem.bind(this));
+        this._commandWindow.setHandler('skill',     this.commandPersonal.bind(this));
+        this._commandWindow.setHandler('equip',     this.commandPersonal.bind(this));
+        this._commandWindow.setHandler('status',    this.commandPersonal.bind(this));
+        this._commandWindow.setHandler('formation', this.commandFormation.bind(this));
+        this._commandWindow.setHandler('options',   this.commandOptions.bind(this));
+        this._commandWindow.setHandler('save',      this.commandSave.bind(this));
+        this._commandWindow.setHandler('gameEnd',   this.commandGameEnd.bind(this));
+        this._commandWindow.setHandler('cancel',    this.popScene.bind(this));
+        this.addWindow(this._commandWindow);
     };
 
     /*Scene_MenuBase.prototype.createBackground = function() {
