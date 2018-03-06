@@ -87,4 +87,11 @@
         return this.maxItems();
     };
 
+    /********************************************************
+     * Texting menu
+     *******************************************************/
+    // Borrowed some functionality from YEP_GabWindow
+
+    
+
 })();
